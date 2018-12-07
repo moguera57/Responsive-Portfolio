@@ -1,0 +1,202 @@
+body{
+    background-color: #9883E4;
+}
+
+p{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Karla";
+}
+
+h1{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+section h1:after{
+        content:'';
+        position:absolute;
+        width:150px;
+        border-bottom: 1px #444 solid;
+        left: 0;
+        bottom:0;
+        margin:auto;
+}
+
+.sticky-nav{
+    position: fixed;
+    padding: 20px;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.sticky-nav ul{
+    list-style-type: none;
+}
+
+.sticky-nav ul li{
+    float: left;
+    padding: 0px 5px 0px 5px;
+    border-right: solid 1px #ececec;
+}
+
+.sticky-nav ul li:last-child{
+    border-right: none;
+}
+
+.menu-item{
+    font-family: 'Karla', sans-serif;
+    color: #ececec;
+    text-decoration: none;
+}
+
+.sticky-nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.full-page-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg-change{
+    background-color: #fff;
+    transition: .3s;
+}
+
+.scroll-menu-bg{
+    background-color: #ddd;
+    border-radius: 25px;
+    transition: .3s;
+}
+
+.scroll-menu-bg ul li{
+    border-right: solid 1px #464646;
+}
+
+.scroll-color-change{
+    color: #464646!important;
+}
+
+.hidden{
+    display: none;
+    transition: .3s;
+}
+
+.screen-centered-header{
+    position: absolute;
+    width: 80%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-centered{
+    font-size: 80px;
+    color: #ececec;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.job-centered{
+    font-size: 40px;
+    color: #ececec;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+section{
+    margin: 0 auto;
+    max-width: 1080px;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.about-img{
+    float: left;
+    width: 200px;
+    padding: 10px;
+}
+
+.portfolio-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    margin-bottom: 20px;
+    width: 290px;
+    background-color: #ececec;
+}
+
+.portfolio-item-wrapper{
+    padding: 10px;
+}
+
+.portfolio-item h2{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.portfolio-item img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    font-size: 20px;
+    padding: 10px 0px;
+    font-family: "Open Sans";
+}
+
+.btn{
+    width: 150px;
+    padding: 30px 0px;
+    margin-top: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #ddd;
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width: 970px){
+    .portfolio-item{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .portfolio-item{
+        width: 100%;
+    }
+}
