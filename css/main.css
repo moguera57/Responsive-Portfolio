@@ -199,4 +199,8 @@ footer p{
     .portfolio-item{
         width: 100%;
     }
+
+    .name-centered{
+        font-size: 60px;
+    }
 }
